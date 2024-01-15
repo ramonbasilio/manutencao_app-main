@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911875876408",
+    "project_id": "manutencaoapp-3dff6",
+    "storage_bucket": "manutencaoapp-3dff6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911875876408:android:08cb9abcbf2548883668cd",
+        "android_client_info": {
+          "package_name": "com.example.manutencao_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjC4Rgu2PLhE37srs3daUpVijM4HKIQhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
