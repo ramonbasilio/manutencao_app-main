@@ -9,13 +9,14 @@ class ConfirmacaoChamadoSimples {
       builder: (context) {
         final provider = Provider.of<EnvioEmail>(context, listen: false);
         return AlertDialog(
+          
           title: const Text('Confirmação de chamado'),
           content: const Text(
               'Deseja enviar um alerta sobre a parada de uma máquina?'),
           actions: [
             ElevatedButton(
               onPressed: () async {
-                await EnvioEmail().alertaEmailSimples().then((value) {
+                await EnvioEmail().alertaEmailSimples().then((String value) {
                   final snackBar = SnackBar(
                     content: Text(value),
                   );

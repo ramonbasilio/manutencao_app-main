@@ -19,7 +19,7 @@ class EnvioEmail extends ChangeNotifier {
   }) async {
     String serviceId = 'service_o3s6mpa';
     String templateId = 'template_cncax9n';
-    String userId = 'JyDdZUNse5YkQqfFp';
+    String userId = 'i3IQ7Fk_vQPLufWSg';
 
     final url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
 
@@ -58,7 +58,7 @@ class EnvioEmail extends ChangeNotifier {
     print('1: $_loading');
     String serviceId = 'service_o3s6mpa';
     String templateId = 'template_dq1u74b';
-    String userId = 'JyDdZUNse5YkQqfFp';
+    String userId = 'i3IQ7Fk_vQPLufWSg';
     _email = await leDados();
 
     final url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
@@ -78,14 +78,12 @@ class EnvioEmail extends ChangeNotifier {
             'hora': '${DateTime.now().hour}:${DateTime.now().minute}'
           },
         }));
-
-    _loading = false;
-    print('2: $_loading');
-    notifyListeners();
     if (resposta.statusCode == 200) {
       return 'Enviado com sucesso';
     } else {
-      return 'Ocorreu um erro ao enviar mensagem';
+      return 'Falha ao enviar email: Erro: ${resposta.statusCode}';
     }
   }
 }
+  
+

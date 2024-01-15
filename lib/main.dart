@@ -15,7 +15,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-    MaterialColor _colorSwatch(int hexColor) {
+  MaterialColor _colorSwatch(int hexColor) {
     return MaterialColor(
       hexColor,
       <int, Color>{
@@ -39,10 +39,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xFFFFFFFF),
-        primarySwatch: _colorSwatch(0xFFf47c44),  
-        secondaryHeaderColor: Colors.white
-      ),
+          useMaterial3: false,
+          scaffoldBackgroundColor: const Color(0xFFFFFFFF),
+          primarySwatch: _colorSwatch(0xFFf47c44),
+          secondaryHeaderColor: Colors.white),
       home: const PaginaInicial(),
     );
   }
